@@ -1,0 +1,38 @@
+.buttonTouch {
+  color: white;
+  background-color: #ff6833;
+  border: none;
+  width: 94px;
+  height: 38px;
+  border-radius: 35px;
+  font-weight: 400;
+  /* position: absolute; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navAboutUsProducts {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 55%;
+}
+
+#navHome {
+  padding: 0px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-p-format {
+  margin-top: 5%;
+  margin-inline: 9%;
+}
+
+.cards-divs {
+  margin-inline: 9%;
+}
+
+.card-format {
+  background: linear-gradient(90deg, rgba(255, 104, 51, 1) 9%, rgba(255, 241, 51, 1) 100%);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="m-5 p-4 w-50 border" id="form-container">
+      <form id="form-id" action="/fruits" method="POST">
+        <div class="mb-3">
+          <label for="fruitInput" class="form-label">Agrega una Fruta: </label>
+          <input type="text" class="form-control" id="fruitInput" name="fruitInput" />
+          <button class="btn btn-success m-2" type="submit" id="add-fruit-btn">Add Fruit</button>
+        </div>
+      </form>
+      <ul>
+        <!-- prettier-ignore -->
+        <% for (fruit of fruitsArray) { %>
+        <li><%= fruit %></li>
+
+        <% } %>
+      </ul>
+    </div>
+    <script>
+      // const addFruitButton = document.querySelector("#add-fruit-btn");
+      // const addFruitInput = document.querySelector("#add-fruit-input");
+      // const sendInfo = document.querySelector("#form-container");
+      // const form = document.querySelector("#form-id");
+
+      // const submitInfo = (e, route) => {
+      //   e.preventDefault();
+      //   let info = addFruitInput.value;
+      //   let object = {};
+      //   object.newFruit = info;
+      //   // let formData = new FormData(form);
+      //   // let obj = {};
+      //   // formData.forEach((value, key) => (obj[key] = value));
+      //   console.log("Its getting inside submitInfo function");
+      //   fetch(route, {
+      //     method: "POST",
+      //     body: JSON.stringify(object),
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //   })
+      //     .then((res) => res.json())
+      //     .then((json) => console.log(json))
+      //     .catch((error) => {
+      //       console.error("Error:", error);
+      //     });
+      // };
+      // form.addEventListener("submit", (e) => submitInfo(e, "http://localhost:3000/fruits"));
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

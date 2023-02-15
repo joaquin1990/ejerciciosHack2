@@ -1,0 +1,133 @@
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+#buy-now {
+  background-color: #ff6833;
+  color: white;
+  border-radius: 35px;
+  width: 6rem;
+  height: 2.2rem;
+  padding-top: 6px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#hero {
+  padding-top: 6rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
+
+#badge {
+  background-color: #ff6833;
+  margin-top: 2rem;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.box-img {
+  width: 100%;
+  height: 20px;
+  margin: 1rem 0;
+}
+
+.features {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.boton-products {
+  background-color: #ff6833;
+  color: white;
+}
+.boton-documentation {
+  background-color: #ffd0be;
+  color: #ff6833;
+}
+
+.boton-products:hover {
+  background-color: #ff6833;
+  color: white;
+}
+
+.boton-documentation:hover {
+  background-color: #ffd0be;
+  color: #ff6833;
+}
+
+.curva {
+  background: url("./img/curveGray.svg");
+  height: 100px;
+}
+
+.relleno-curva {
+  background: #f5f5f5;
+}
+
+.imgUser {
+  width: 40px;
+  height: 40px;
+  background: gray;
+  margin-bottom: 12px;
+}
+#newsletter {
+  margin-top: 20px;
+  background: white;
+  position: relative;
+  top: 25px;
+}
+#boton-form {
+  background-color: #fa4f15;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+}
+
+.from-the-blog {
+  margin: 0 auto;
+}
+
+.card {
+  min-height: 530px;
+}
+#blog p {
+  color: #888;
+}
+section#blog::after {
+  background-image: url("../img/curveFooter.svg");
+  display: block;
+  content: "";
+  width: 100%;
+  height: 20px;
+}
+
+footer {
+  padding-top: 80px;
+  background: #111111;
+  min-height: 300px;
+}
+
+footer a {
+  display: block;
+  color: #888888 !important;
+}
+
+@media (max-width: 992px) {
+  .card {
+    min-height: 605px;
+  }
+}
+@media (max-width: 768px) {
+  .data-content {
+    margin-bottom: 3rem;
+  }
+  .card {
+    min-height: 0;
+  }
+}

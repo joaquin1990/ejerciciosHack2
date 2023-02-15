@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- CLAVE EL ACTION EN EL FORM -->
+    <form>
+      <div class="m-5">
+        <div class="mb-3">
+          <h2>Ingresar dos numeros para multiplicar</h2>
+          <label for="number1input" class="form-label">Numero 1</label>
+          <!-- CLAVE EL numer EN EL INPUT -->
+          <input type="number" class="form-control" id="number1" name="number1" aria-describedby="emailHelp" />
+        </div>
+        <div class="mb-3">
+          <label for="number2input" class="form-label">Numero 2</label>
+          <!-- CLAVE EL numer EN EL INPUT -->
+          <input type="number" class="form-control" id="number2" name="number2" />
+        </div>
+        <button type="button" class="btn btn-primary" onclick="ajaxFetch()" id="multiplicar-button">Multiplicar</button>
+      </div>
+    </form>
+    <div id="injectionContainer" class="ms-5"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+      const newText = document.createElement("p");
+      const injectionContainer = document.querySelector("#injectionContainer");
+      const buttonTrigger = document.querySelector("#multiplicar-button");
+
+      // ANY OF THE TWO FUNCTIONS WORK, ON THE EVENT LISTENER
+      // OTHER IMPROTANT THING IS TO PUT TYPE="BUTTON" TO THE BUTTON, SO THAT THE PAGE DONT LOAD
+      // AND FROM THE BACK, SEND AN OBJECT, IF JUST A NUMBER IS SENT, IT WONT WORK, CONSOLE WILL PRINT AN HTML, OR AN ERROR
+      function ajaxFetch() {
+        let input1 = document.querySelector("#number1");
+        let input2 = document.querySelector("#number2");
+        console.log("Click working");
+        fetch(`http://localhost:3000/multiplicar?number1=${input1.value}&number2=${input2.value}`)
+          .then((res) => res.text())
+          .then((data) => {
+            // console.log(data);
+            console.log(JSON.parse(data));
+            let result = JSON.parse(data).result;
+            console.log(result);
+            newText.innerText = `El resultado es: ${result}`;
+            injectionContainer.appendChild(newText);
+            input1.value = "";
+            input2.value = "";
+          });
+      }
+      // buttonTrigger.addEventListener("click", (e) => {
+      //   e.preventDefault();
+      //   let input1 = document.querySelector("#number1");
+      //   let input2 = document.querySelector("#number2");
+      //   fetch(`http://localhost:3000/multiplicar?number1=${input1.value}&number2=${input2.value}`)
+      //     .then((res) => res.text())
+      //     .then((data) => {
+      //       console.log(JSON.parse(data));
+      //       let result = JSON.parse(data).result;
+      //       console.log(result);
+      //       newText.innerText = `El resultado es: ${result}`;
+      //       injectionContainer.appendChild(newText);
+      //       input1.value = "";
+      //       input2.value = "";
+      //     });
+      // });
+    </script>
+  </body>
+</html>

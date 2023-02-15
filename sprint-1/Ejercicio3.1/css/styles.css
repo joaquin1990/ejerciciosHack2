@@ -1,0 +1,48 @@
+.card-format {
+  min-height: 22rem;
+}
+
+.imgUser {
+  width: 40px;
+  height: 40px;
+  background: gray;
+  margin-bottom: 12px;
+}
+
+.newsletter-format {
+  /* margin-top: 45px; */
+  /* height: 190px; */
+  background-color: white;
+  position: relative;
+  top: 45px;
+}
+
+.btn-format {
+  background-color: #fa4f15;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+}
+
+#blog-section::after {
+  background-image: url("../img/curveFooter.svg");
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+footer {
+  padding-top: 100px;
+  background: #111111;
+  min-height: 450px;
+}
+
+footer a {
+  display: block;
+  color: #888888 !important;
+}
+
+.footer-first-div {
+  margin-bottom: 100px;
+}

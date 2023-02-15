@@ -1,0 +1,24 @@
+.div-container {
+  padding: 30px;
+  width: 60%;
+}
+
+.input-format {
+  width: 90%;
+  margin: 1px;
+}
+
+.table-style {
+  width: 100%;
+  /* margin: 70px; */
+  /* margin-right: 100px; */
+}
+
+table,
+th,
+td {
+  /* text-align: center; */
+  /* padding: 3px; */
+  border: 2px solid black;
+  border-collapse: collapse;
+}

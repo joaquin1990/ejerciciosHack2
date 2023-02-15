@@ -1,0 +1,28 @@
+:root {
+  --nice-red: rgb(194, 43, 29);
+  --strong-orange: rgb(255, 159, 63);
+}
+
+.principal-box {
+  background-color: var(--nice-red);
+  width: 650px;
+  height: 650px;
+  /* box-sizing: border-box; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  /* gap: 2rem; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; */
+  /* align-items: flex-end; */
+  /* flex-grow: 3; */
+}
+
+/* .principal-box div {
+  background-color: var(--strong-orange);
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+} */
+
+/* margin: 10px; */

@@ -1,0 +1,14 @@
+.table-style {
+  width: 60%;
+  margin: 70px;
+  margin-right: 100px;
+}
+
+table,
+th,
+td {
+  /* text-align: center; */
+  padding: 3px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
