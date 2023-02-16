@@ -3,7 +3,7 @@ const express = require("express");
 const routes = require("./routes/index");
 const app = express();
 const bcrypt = require("bcryptjs");
-const passport = require("./passport/passsportConfig");
+const passport = require("./passport/passportConfig");
 
 passport(app);
 

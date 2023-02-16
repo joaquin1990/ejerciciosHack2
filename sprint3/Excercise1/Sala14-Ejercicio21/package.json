@@ -27,7 +27,8 @@
     "mysql2": "^3.1.2",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^6.28.0"
+    "sequelize": "^6.28.0",
+    "validator": "^13.9.0"
   },
   "description": "",
   "devDependencies": {
