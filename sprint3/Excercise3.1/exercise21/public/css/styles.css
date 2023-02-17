@@ -1,0 +1,41 @@
+/* Colocar aquí CSS "propio" */
+#navbarLogo {
+  max-width: 10rem;
+}
+
+body {
+  margin-top: 6rem;
+}
+
+.carouselArticleInfo {
+  color: black;
+}
+
+.carrouselImage {
+  height: 10rem !important;
+}
+
+.articleContent {
+  text-overflow: ellipsis " [..]";
+}
+
+.createNewArticleForm {
+  margin-top: 8.5rem !important;
+}
+
+.createNewUserForm {
+  margin-top: 8.5rem !important;
+}
+
+.principal-img {
+  max-height: 380px;
+  object-fit: cover;
+}
+
+.img-product {
+  max-height: 500px;
+  object-fit: cover;
+}
+.tableImg {
+  max-width: 16rem;
+}
