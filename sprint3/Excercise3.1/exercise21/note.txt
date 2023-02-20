@@ -1,0 +1,2 @@
+  <% if(article.userId === user.id || user.roleCode === 4) { %>
+ <% } %>
