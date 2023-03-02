@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#film-container {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.film-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#film {
+  height: 100%;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.file-name {
+  width: 100%;
+  background-color: rgb(44, 42, 42);
+  margin-block: 0;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+}
+
+.rating {
+  width: 100%;
+  background-color: rgb(131, 127, 127);
+  margin-block: 0;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Regular {
+  background-color: yellow;
+}
+
+.Excelente {
+  background-color: green;
+}
+
+.Mala {
+  background-color: red;
+}
