@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
-import List from "./components/list/List";
+import ListContent from "./components/list/ListApp";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div className="App vh-100">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/list/:id" element={<List />} />
+          <Route path="/list/:id" element={<ListContent />} />
         </Routes>
       </div>
     </BrowserRouter>

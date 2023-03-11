@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import AddListModal from "../addListModal/AddListModal";
 import { FaPlusCircle } from "react-icons/fa";
-import ListContainer from "../listContainer/ListContainer";
+import ListContainer from "../listsContainer/ListsContainer";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,10 @@ function Home() {
       )}
       {/* BUTTON POR ADDING NEW LISTS */}
       <div className="d-flex position-fixed bottom-0 start-0 m-5">
-        <button onClick={() => handleIsOpen()} className="fs-1 border-0 bg-transparent ">
+        <button
+          onClick={() => handleIsOpen()}
+          className="fs-1 border-0 bg-transparent "
+        >
           <FaPlusCircle size={100} />
         </button>
       </div>
